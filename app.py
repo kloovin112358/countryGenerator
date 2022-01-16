@@ -1,4 +1,3 @@
-from msilib.schema import Binary
 from flask import Flask, render_template, jsonify
 import csv
 from random import randint
