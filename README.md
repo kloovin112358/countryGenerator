@@ -5,4 +5,4 @@ Built on [Flask](https://flask.palletsprojects.com/en/2.0.x/), [Bootstrap 5](htt
 
 ![image](https://user-images.githubusercontent.com/76788161/149640985-a5259bf9-8c6d-4a01-ac9b-2ff1936b9ad9.png)
 
-Live as of 1/15/22 at https://country-generator.herokuapp.com/.
+Live at https://country-generator.herokuapp.com/.
