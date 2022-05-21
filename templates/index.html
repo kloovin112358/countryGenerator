@@ -50,6 +50,7 @@ body {
       <div class='card-body text-center'>
         <p>Your results:</p>
         <canvas id="countryChart" style='max-height:30rem;'></canvas>
+        <br><p>Rarest: <span class="fw-bold" id="rarestCountry"></span> at <span class="fw-bold" id="rarestChance"></span></p>
       </div>
       
     </div>
@@ -95,6 +96,7 @@ var countryChart = new Chart(
 var countryNames = []
 var countryCounts = []
 var countryColors = []
+var rarestChance = 1
 
 // each new country gets a random color
 function getRandomColor() {
@@ -140,6 +142,11 @@ $('#generateBtn').on('click', function() {
       $('.countryName').html(countryName)
       $('.population').html(countryList[1].toLocaleString())
       $('.percentChance').html(countryList[2] * 100 + "%")
+      if (countryList[2] < rarestChance) {
+        $('#rarestChance').html(countryList[2] * 100 + "%")
+        $('#rarestCountry').html(countryName)
+        rarestChance = countryList[2]
+      }
       
       if (first) {
         $('#instructionCard').fadeOut(1500)
