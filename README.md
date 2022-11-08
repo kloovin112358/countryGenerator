@@ -4,5 +4,3 @@ This web app randomly generates countries based on population probabilities. As 
 Built on [Flask](https://flask.palletsprojects.com/en/2.0.x/), [Bootstrap 5](https://getbootstrap.com/), and [Chart.JS](https://www.chartjs.org/).
 
 ![image](https://user-images.githubusercontent.com/76788161/149640985-a5259bf9-8c6d-4a01-ac9b-2ff1936b9ad9.png)
-
-Live at https://country-generator.herokuapp.com/.
